@@ -30,18 +30,22 @@
         .links a {
             display: block;
             text-decoration: none;
-            background-color: #ff0000; /* Червен цвят на фона */
-            color: #ffffff; /* Бели букви */
+            color: #000000; /* Черни букви */
             font-weight: bold;
             padding: 5px 8px; /* Променете padding за размера на правоъгълниците */
-            border: 1px solid #ccc;
-            border-radius: 4px;
+            border: none;
             margin-bottom: 5px;
+            cursor: pointer;
+            background: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 255, 0), rgb(0, 255, 0), rgb(0, 0, 255), rgb(255, 0, 0)); /* Линеен градиент от червено към синьо */
+            background-size: 200% auto; /* Двойна ширина на градиента */
+            animation: gradientAnimation 5s linear infinite; /* Анимация на градиента */
         }
-        
-        .links a:hover {
-            background-color: #f1f1f1;
-            color: #000;
+
+        /* Анимация на градиента */
+        @keyframes gradientAnimation {
+            0% { background-position: 0 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0 50%; }
         }
 
         /* Медиазапитвания за мобилен изглед */
@@ -60,11 +64,11 @@
     </style>
 </head>
 <body>
-    <h1 style="color: #ff0000;">Бланки за отговори 7 клас</h1>
+    <h1 style="color: #ff0000;"><b>Бланки за отговори 7 клас</b></h1>
     <div class="links">
         <a href="https://ourakovski.com/download/pages/613/MON_7mi_klas_Matematika_2022.pdf">Бланка за отговори по математика 2022г.</a>
         <a href="https://ivazov-silistra.com/wp-content/uploads/2022/05/MON_7_mi_klas_Balgarski_ezik_2022.pdf">Бланка за отговори по български език и литература 2022г.</a>
-        <h2 style="color: #ff0000;">Бланки за отговори 4 клас</h2>
+        <h2 style="color: #ff0000;"><b>Бланки за отговори 4 клас</b></h2>
         <a href="https://www.google.com/url?sa=t&source=web&rct=j&url=https://ivazov-silistra.com/wp-content/uploads/2022/05/MON_4_ti_klas_Bulgarski_ezik.pdf&ved=2ahUKEwihhqzkyMj_AhVYRvEDHf-AAz4QFnoECB0QAQ&usg=AOvVaw24C5DRDZdNc82lX5Cc75_0">Бланка за отговори по български език и литература 2022г.</a>
         <a href="https://www.google.com/url?sa=t&source=web&rct=j&url=https://ourakovski.com/download/pages/611/MON_4_ti_klas_Matematika_4p_210x297.pdf&ved=2ahUKEwihhqzkyMj_AhVYRvEDHf-AAz4QFnoECBwQAQ&usg=AOvVaw10JbVpjpaAJcE8wpkOEcYk">Бланка за отговори по математика 2022г.</a>
     </div>
